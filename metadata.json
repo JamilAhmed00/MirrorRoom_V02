@@ -1,0 +1,6 @@
+{
+  "name": "SPYIT — Organic Dynamic Fruit Soda",
+  "description": "Interactive e-commerce showcase for SPYIT refreshing organic fruit soda featuring flavor sliders, ingredients breakdown, video showcase, and vibrant animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
