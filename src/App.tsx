@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { HeroSlider } from './components/HeroSlider';
 import { ChilloutSection } from './components/ChilloutSection';
@@ -22,6 +22,28 @@ export default function App() {
   const [activeFlavorIndex, setActiveFlavorIndex] = useState(0);
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
   const [orderModalFlavorId, setOrderModalFlavorId] = useState('orange');
+
+  // Preload essential image assets on mount for immediate availability
+  useEffect(() => {
+    const imagesToPreload: string[] = [
+      '/images/ice_cube.png',
+      '/images/ingre_orange.png'
+    ];
+
+    FLAVORS.forEach((f) => {
+      if (f.canImage) imagesToPreload.push(f.canImage);
+      if (f.frontImage) imagesToPreload.push(f.frontImage);
+      if (f.canHeroImage) imagesToPreload.push(f.canHeroImage);
+      f.slices?.forEach((s) => {
+        if (s.src) imagesToPreload.push(s.src);
+      });
+    });
+
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   const handleOpenOrder = (flavorId?: string) => {
     if (flavorId) {

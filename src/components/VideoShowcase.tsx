@@ -31,13 +31,18 @@ export const VideoShowcase: React.FC = () => {
       className="relative w-full bg-white py-[80px] md:py-[120px] font-sans flex flex-col items-center justify-center select-none overflow-hidden"
     >
       {/* Top Vector Decorative Curve */}
-      <div className="absolute top-0 left-0 w-full z-0">
-        <img
-          alt="SPYIT Symbol"
-          referrerPolicy="no-referrer"
-          className="w-full h-auto select-none pointer-events-none object-contain"
-          src="https://cdn.jiro.build/Spyit/Image/Images/Vector.svg"
-        />
+      <div className="absolute top-0 left-0 w-full z-0 overflow-hidden pointer-events-none select-none">
+        <svg
+          viewBox="0 0 1440 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto object-cover"
+        >
+          <path
+            d="M64.5 105.093C115.545 106.143 125.479 57.2459 176.5 58.759C215.678 59.9208 226.48 87.9995 265.5 90.6779C304.545 93.3577 325.041 62.408 362 71.4581C395.519 79.6656 369.079 101.03 390.5 120.537C403.791 132.64 429.059 128.534 441.5 141.473C459.946 160.658 468.273 195.515 500.5 199.476C571.834 208.242 525.802 104.298 595.5 90.6779C651.281 79.7769 679.522 121.568 737.5 120.537C783.405 119.721 804.607 99.3324 850.5 98.2286C893.25 97.2003 915.3 114.364 957.997 112.644C999.675 110.965 1020.08 82.2933 1060 90.6779C1090.4 97.061 1089.36 122.632 1120 128.431C1137.89 131.815 1149.71 124.812 1167.5 128.431C1218.53 138.817 1182.75 197.004 1224.38 197.004C1272.38 197.004 1224.19 120.442 1291.5 104.75C1349.56 91.2127 1440 139.757 1440 139.757V0H0V90.6779C0 90.6779 38.0216 104.548 64.5 105.093Z"
+            fill="#FFF7F1"
+          />
+        </svg>
       </div>
 
       <div className="w-full max-w-full mx-auto flex flex-col items-center relative z-10 pt-12 sm:pt-20 md:pt-28 lg:pt-36">

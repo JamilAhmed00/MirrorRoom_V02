@@ -23,12 +23,19 @@ export const FAQSection: React.FC = () => {
       className="w-full bg-[#FCFCF9] pt-[140px] md:pt-[200px] pb-[100px] md:pb-[130px] px-6 sm:px-12 md:px-16 lg:px-20 font-sans select-none overflow-hidden relative"
     >
       {/* Top FAQ Decorative Wave Vector */}
-      <img
-        alt="FAQ Vector"
-        className="absolute top-0 left-0 w-full pointer-events-none z-10 h-auto select-none"
-        referrerPolicy="no-referrer"
-        src="https://cdn.jiro.build/Spyit/Image/faq%20Vector.svg"
-      />
+      <div className="absolute top-0 left-0 w-full pointer-events-none z-10 overflow-hidden select-none">
+        <svg
+          viewBox="0 0 1440 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto object-cover"
+        >
+          <path
+            d="M64.5 105.093C115.545 106.143 125.479 57.2459 176.5 58.759C215.678 59.9208 226.48 87.9995 265.5 90.6779C304.545 93.3577 325.041 62.408 362 71.4581C395.519 79.6656 369.079 101.03 390.5 120.537C403.791 132.64 429.059 128.534 441.5 141.473C459.946 160.658 468.273 195.515 500.5 199.476C571.834 208.242 525.802 104.298 595.5 90.6779C651.281 79.7769 679.522 121.568 737.5 120.537C783.405 119.721 804.608 99.3324 850.5 98.2286C893.25 97.2003 915.3 114.364 957.997 112.644C999.675 110.965 1020.08 82.2933 1060 90.6779C1090.39 97.061 1089.36 122.632 1120 128.431C1137.88 131.815 1149.71 124.812 1167.5 128.431C1218.53 138.817 1182.75 197.004 1224.38 197.004C1272.38 197.004 1224.19 120.442 1291.5 104.75C1349.56 91.2127 1440 139.757 1440 139.757V0H0V90.6779C0 90.6779 38.0216 104.548 64.5 105.093Z"
+            fill="#00A165"
+          />
+        </svg>
+      </div>
 
       {/* Subtle Background Glows */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 opacity-45">
